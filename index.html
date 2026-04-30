@@ -5,7 +5,343 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Life Chapel International | Church in Cedar Rapids</title>
-<meta name="description" content="Life Chapel International is a Christ-centered church in Cedar Rapids focused on worship, faith, and community transformation.">
+<meta name="description" content="Life Chapel International is a Christ-centered church in Cedar Rapids focused on worship, <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Life Chapel International</title>
+
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#eef2f3,#dfe9f3);
+color:#222;
+transition:.3s;
+}
+
+body.dark{
+background:#0f172a;
+color:#eee;
+}
+
+/* NAVBAR */
+header{
+position:sticky;
+top:0;
+background:#fff;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+body.dark header{
+background:#1e293b;
+}
+
+.nav-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 6%;
+}
+
+.nav-image{
+width:70px;
+height:70px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #007BFF;
+}
+
+.nav-menu{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-menu a{
+text-decoration:none;
+color:inherit;
+font-weight:600;
+}
+
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('life5.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 25px;
+background:#007BFF;
+border:none;
+color:#fff;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* SECTION */
+.section{
+padding:70px 8%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:25px;
+color:#007BFF;
+}
+
+/* ABOUT */
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+align-items:center;
+justify-content:center;
+}
+
+.about img{
+width:100%;
+max-width:350px;
+border-radius:10px;
+}
+
+.about-text{
+max-width:500px;
+line-height:1.7;
+}
+
+/* EVENTS */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#fff;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+/* VIDEO */
+.video{
+display:flex;
+gap:20px;
+overflow-x:auto;
+}
+
+.video video{
+width:300px;
+border-radius:10px;
+}
+
+/* CONTACT */
+.contact{
+background:#0f172a;
+color:#fff;
+text-align:center;
+padding:60px 20px;
+}
+
+.contact form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.contact input,
+.contact textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+.contact button{
+padding:12px;
+background:#007BFF;
+color:#fff;
+border:none;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+background:#020617;
+color:#fff;
+text-align:center;
+padding:30px;
+}
+
+/* FLOAT BUTTONS */
+.whatsapp, .facebook, .youtube{
+position:fixed;
+right:20px;
+color:#fff;
+padding:12px;
+border-radius:50%;
+font-size:22px;
+}
+
+.whatsapp{bottom:20px;background:#25D366;}
+.facebook{bottom:80px;background:#1877F2;}
+.youtube{bottom:140px;background:#FF0000;}
+
+/* MOBILE */
+@media(max-width:768px){
+.nav-menu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:80px;
+right:0;
+background:#fff;
+padding:20px;
+}
+
+.nav-menu.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/13192093484" class="whatsapp"><i class="uil uil-whatsapp"></i></a>
+<a href="https://web.facebook.com/lifechapel.cedar.rapids" class="facebook"><i class="uil uil-facebook"></i></a>
+<a href="https://www.youtube.com/@LifeChapelCedarRapids/live" class="youtube"><i class="uil uil-youtube"></i></a>
+
+<!-- NAVBAR -->
+<header>
+<div class="nav-container">
+<img src="life1.jpg" class="nav-image">
+
+<ul class="nav-menu" id="menu">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Events</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<i class="uil uil-bars menu-toggle" id="toggle"></i>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1>Welcome to Life Chapel</h1>
+<p>A place of love, faith and transformation</p>
+<button>Join Us Sunday</button>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+<h2>About Us</h2>
+<div class="about">
+<img src="life1.jpg">
+<div class="about-text">
+<p>Life Chapel is a Christ-centered church where lives are transformed through love, worship, and the Word of God.</p>
+</div>
+</div>
+</section>
+
+<!-- EVENTS -->
+<section class="section">
+<h2>Events</h2>
+<div class="grid">
+<div class="card"><img src="life6.jpg"><h4>Anniversary</h4></div>
+<div class="card"><img src="life7.jpg"><h4>Father's Day</h4></div>
+<div class="card"><img src="life8.jpg"><h4>Mother's Day</h4></div>
+</div>
+</section>
+
+<!-- VIDEO -->
+<section class="section">
+<h2>Teachings</h2>
+<div class="video">
+<video src="teaching1.mp4" controls></video>
+<video src="biblecamp.mp4" controls></video>
+<video src="praise.mp4" controls></video>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Contact Us</h2>
+<form action="https://formsubmit.co/mulbahhoward2004@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Message"></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Life Chapel International</p>
+</footer>
+
+<script>
+const toggle = document.getElementById("toggle");
+const menu = document.getElementById("menu");
+
+toggle.onclick = () => {
+menu.classList.toggle("active");
+};
+</script>
+
+</body>
+</html>
 
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
